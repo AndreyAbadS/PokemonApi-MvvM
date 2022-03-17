@@ -34,8 +34,3 @@ data class Result(
     val url: String
 )
 
-//Lista de los pokemons
-data class PokemonListResult(val results: List<PokemonList> = listOf())
-
-//guardar los datos de pokemon traidos en una lista
-data class PokemonInfo(val results: List<Pokemon> = listOf())

@@ -1,10 +1,10 @@
 package com.example.pokedex.Repository
 
-import com.example.pokedex.Data.Model.PokemonInfo
-import com.example.pokedex.Data.Model.PokemonListResult
+import com.example.pokedex.Data.Model.Pokemon
+import com.example.pokedex.Data.Model.PokemonList
 
 //interface para buscar informacion al servidor
 interface pokemonRepository {
-    suspend fun getPokemon(): PokemonInfo
-    suspend fun getPokemonList():PokemonListResult
+    suspend fun getPokemon(): Pokemon
+    suspend fun getPokemonList(): PokemonList
 }

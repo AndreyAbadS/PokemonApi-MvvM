@@ -23,6 +23,4 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/pokemon_item"/>
 
-
-
 </LinearLayout>
