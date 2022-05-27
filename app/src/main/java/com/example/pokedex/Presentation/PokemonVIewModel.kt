@@ -16,7 +16,7 @@ class PokemonVIewModel(private val repo:pokemonRepository):ViewModel(){
         //Emitir liveData a la UI
         emit(Resource.Loading())
         try {
-            emit(Resource.Success(repo.getPokemon(pokemon)))
+            emit(Resource.Success((repo.getPokemon(pokemon))))
         }catch (e:Exception){
             emit(Resource.Failed(e))
         }

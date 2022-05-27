@@ -1,70 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dcd8bb"
+    android:orientation="vertical"
     tools:context=".UI.PokemonDetailsFragment">
 
-    <TextView
-        android:id="@+id/tv_NamePokemonDetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NAME POKEMON"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME POKEMON"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="212"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_NamePokemonDetails"
-        app:layout_constraintVertical_bias="0.101" />
+        <TextView
+            android:id="@+id/tv_NamePokemonDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pikachu"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/iv_pokemon"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_order"
-        app:layout_constraintVertical_bias="0.12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/tv_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="height"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_pokemon"
-        app:layout_constraintVertical_bias="0.173" />
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="212"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/tv_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="weight"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_height"
-        app:layout_constraintVertical_bias="0.208" />
+        <ImageView
+            android:id="@+id/iv_pokemon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="height"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weight"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is Default"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base Experience"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_baseExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="101"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

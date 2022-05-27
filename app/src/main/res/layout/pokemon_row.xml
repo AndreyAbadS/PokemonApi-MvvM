@@ -14,7 +14,7 @@
         android:text="PokeDex"
         android:textSize="30dp"
         android:textStyle="bold"/>
-    
+
     <androidx.recyclerview.widget.RecyclerView
         android:orientation="vertical"
         android:id="@+id/rv_listPokemon"

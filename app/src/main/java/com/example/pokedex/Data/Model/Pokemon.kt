@@ -2,6 +2,10 @@ package com.example.pokedex.Data.Model
 
 import com.google.gson.annotations.SerializedName
 
+data class PokemonFinal(
+    val pokemon:List<Pokemon> = listOf(),
+    val Result: List<Result> = listOf()
+)
 //datos que rellenaremos desde la api
 data class Pokemon(
     val id: Int,
@@ -26,7 +30,7 @@ data class PokemonList(
     val count: Int = -1,
     val next: String = "",
     val previous: String = "",
-    val results: List<Result>
+    val results: List<Result> = listOf()
 )
 
 data class Result(
