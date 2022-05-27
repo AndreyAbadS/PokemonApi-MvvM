@@ -14,7 +14,7 @@ import retrofit2.http.Query
 interface webService {
     //Buscar la informacion y de donde
     @GET("pokemon/{name}")
-    suspend fun getPokemon(@Path("nae") id: String): Pokemon
+    suspend fun getPokemon(@Path("name") id: String): Pokemon
 
     @GET("pokemon")
     suspend fun getPokemonList(

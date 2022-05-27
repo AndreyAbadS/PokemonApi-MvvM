@@ -5,6 +5,6 @@ import com.example.pokedex.Data.Model.PokemonList
 
 //interface para buscar informacion al servidor
 interface pokemonRepository {
-    suspend fun getPokemon(): Pokemon
+    suspend fun getPokemon(pokemon:String): Pokemon
     suspend fun getPokemonList(): PokemonList
 }

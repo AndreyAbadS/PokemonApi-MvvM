@@ -5,9 +5,9 @@ import com.example.pokedex.Data.Model.PokemonList
 import com.example.pokedex.Repository.webService
 
 //llamamos al webService para buscar la informacion
-class PokemonDataSource(private val pokemon:String,private val webService: webService) {
-    suspend fun getPokemon(): Pokemon = webService.getPokemon(pokemon)
+class PokemonDataSource(private val webService: webService) {
+    suspend fun getPokemon(pokemon: String): Pokemon = webService.getPokemon(pokemon)
 
-    suspend fun getPokemonList(): PokemonList = webService.getPokemonList(100,0)
+    suspend fun getPokemonList(): PokemonList = webService.getPokemonList(100000,0)
 
 }
