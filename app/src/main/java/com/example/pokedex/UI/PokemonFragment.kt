@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import com.example.pokedex.Adapters.Concat.PokemonConcactAdapter
 import com.example.pokedex.Adapters.PokemonAdapter
@@ -59,6 +60,8 @@ class PokemonFragment : Fragment(R.layout.fragment_pokemon), PokemonAdapter.OnPo
 
     override fun onPokemonClick(pokemon: Result) {
         Log.d("Pokemon","onPokemonclick ${pokemon.name}")
+        val action= PokemonFragmentDirections.actionPokemonFragmentToPokemonDetailsFragment(pokemon.name)
+        findNavController().navigate(action)
     }
 
 }

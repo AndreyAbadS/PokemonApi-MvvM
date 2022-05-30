@@ -8,6 +8,6 @@ import com.example.pokedex.Repository.webService
 class PokemonDataSource(private val webService: webService) {
     suspend fun getPokemon(pokemon: String): Pokemon = webService.getPokemon(pokemon)
 
-    suspend fun getPokemonList(): PokemonList = webService.getPokemonList(100000,0)
+    suspend fun getPokemonList(): PokemonList = webService.getPokemonList(10,0)
 
 }

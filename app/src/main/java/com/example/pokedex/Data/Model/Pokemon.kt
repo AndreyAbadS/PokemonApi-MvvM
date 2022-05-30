@@ -14,7 +14,7 @@ data class Pokemon(
     val is_default: Boolean = false,
     val name: String = "",
     val order: Int = -1,
-    val weight: String = "",
+    val weight: Int = -1,
     val sprites: Sprites?
 )
 
